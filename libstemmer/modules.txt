@@ -10,7 +10,6 @@
 # the most commonly used encoding.
 
 arabic          UTF_8                   arabic,ar,ara
-armenian        UTF_8                   armenian,hy,hye,arm
 basque          UTF_8,ISO_8859_1        basque,eu,eus,baq
 catalan         UTF_8,ISO_8859_1        catalan,ca,cat
 danish          UTF_8,ISO_8859_1        danish,da,dan
@@ -31,12 +30,10 @@ norwegian       UTF_8,ISO_8859_1        norwegian,no,nor
 portuguese      UTF_8,ISO_8859_1        portuguese,pt,por
 romanian        UTF_8,ISO_8859_2        romanian,ro,rum,ron
 russian         UTF_8,KOI8_R            russian,ru,rus
-serbian         UTF_8                   serbian,sr,srp
 spanish         UTF_8,ISO_8859_1        spanish,es,esl,spa
 swedish         UTF_8,ISO_8859_1        swedish,sv,swe
 tamil           UTF_8                   tamil,ta,tam
 turkish         UTF_8                   turkish,tr,tur
-yiddish         UTF_8                   yiddish,yi,yid
 
 # Also include the traditional porter algorithm for english.
 # The porter algorithm is included in the libstemmer distribution to assist
@@ -61,3 +58,7 @@ porter          UTF_8,ISO_8859_1        porter			english
 #                    only really applicable to a restricted type of input text
 #                    (keywords in academic publications).
 #lovins           UTF_8,ISO_8859_1        lovins		english
+
+english_moma    UTF_8,ISO_8859_1        english_moma,en_moma,eng_moma
+french_moma     UTF_8,ISO_8859_1        french_moma,fr_moma,fre_moma,fra_moma
+italian_moma    UTF_8,ISO_8859_1        italian_moma,it_moma,ita_moma
