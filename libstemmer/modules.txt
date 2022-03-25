@@ -58,3 +58,7 @@ porter          UTF_8,ISO_8859_1        porter			english
 #                    only really applicable to a restricted type of input text
 #                    (keywords in academic publications).
 #lovins           UTF_8,ISO_8859_1        lovins		english
+
+english_moma    UTF_8,ISO_8859_1        english_moma,en_moma,eng_moma
+french_moma     UTF_8,ISO_8859_1        french_moma,fr_moma,fre_moma,fra_moma
+italian_moma    UTF_8,ISO_8859_1        italian_moma,it_moma,ita_moma
