@@ -1,3 +1,4 @@
+libstemmer.a
 *.o
 /algorithms.mk
 /libstemmer/libstemmer.c
