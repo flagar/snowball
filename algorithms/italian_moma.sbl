@@ -3,8 +3,8 @@ routines (
            prelude postlude mark_regions
            RV R1 R2
            attached_pronoun
-           standard_suffix
-           verb_suffix
+           //standard_suffix
+           //verb_suffix
            vowel_suffix
 )
 
@@ -100,7 +100,7 @@ backwardmode (
         )
     )
 
-    define standard_suffix as (
+    /*define standard_suffix as (
         [substring] among(
 
             'anza' 'anze' 'ico' 'ici' 'ica' 'ice' 'iche' 'ichi' 'ismo'
@@ -162,7 +162,7 @@ backwardmode (
             'ar' 'ir' // but 'er' is problematical
                 (delete)
         )
-    )
+    )*/
 
     define AEIO 'aeio{a`}{e`}{i`}{o`}'
     define CG 'cg'

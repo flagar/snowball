@@ -2,8 +2,8 @@ routines (
            prelude postlude mark_regions
            RV R1 R2
            standard_suffix
-           i_verb_suffix
-           verb_suffix
+           //i_verb_suffix
+           //verb_suffix
            residual_suffix
            un_double
            un_accent
@@ -167,7 +167,7 @@ backwardmode (
         )
     )
 
-    define i_verb_suffix as setlimit tomark pV for (
+    /*define i_verb_suffix as setlimit tomark pV for (
         [substring] among (
             '{i^}mes' '{i^}t' '{i^}tes' 'i' 'ie' 'ies' 'ir' 'ira' 'irai'
             'iraIent' 'irais' 'irait' 'iras' 'irent' 'irez' 'iriez'
@@ -198,7 +198,7 @@ backwardmode (
                  try(['e'] delete)
                 )
         )
-    )
+    )*/
 
     define keep_with_s 'aiou{e`}s'
 

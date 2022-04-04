@@ -6,7 +6,7 @@ routines (
     mark_regions
     shortv
     R1 R2
-    Step_1a Step_1b Step_1c Step_2 Step_3 Step_4 Step_5
+    Step_1a //Step_1b Step_1c Step_2 Step_3 Step_4 Step_5
     exception1
     exception2
 )
@@ -52,7 +52,7 @@ backwardmode (
         ( non-v v atlimit )
     )
 
-    define R1 as $p1 <= cursor
+    //define R1 as $p1 <= cursor
     define R2 as $p2 <= cursor
 
     define Step_1a as (
@@ -71,7 +71,7 @@ backwardmode (
         )
     )
 
-    define Step_1b as (
+    /*define Step_1b as (
         [substring] among (
             'eed' 'eedly'
                 (R1 <-'ee')
@@ -162,7 +162,7 @@ backwardmode (
             // ... extensions possible here ...
 
         )
-    )
+    )*/
 )
 
 define exception1 as (
