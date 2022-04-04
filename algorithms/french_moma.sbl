@@ -149,7 +149,10 @@ backwardmode (
                 try ( ['at'] R2 delete ['ic'] (R2 delete) or <-'iqU' )
             )
             'eaux' (<- 'eau')
-            'aux'  (R1 <- 'al')
+            'aux'  (RV delete)
+            'al'   (RV delete)
+            'ail'  (RV delete)
+
             'euse'
             'euses'((R2 delete) or (R1<-'eux'))
 

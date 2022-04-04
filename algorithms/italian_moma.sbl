@@ -3,6 +3,7 @@ routines (
            prelude postlude mark_regions
            RV R1 R2
            attached_pronoun
+           //moma_suffix
            //standard_suffix
            //verb_suffix
            vowel_suffix
@@ -100,6 +101,21 @@ backwardmode (
         )
     )
 
+    /*define moma_suffix as (
+        [substring] among(
+            'atrice' 'atrici'
+                ( R2 delete )
+            'atore' 'atori'
+                ( R2 delete
+                    try ( ['ic'] R2 delete )
+                )
+            'tessa' 'tesse'
+                ( RV <- 't' )
+            'ttore' 'ttori' 'ttrice' 'ttrici'
+                ( RV <- 'tt' )
+        )
+    )*/
+
     /*define standard_suffix as (
         [substring] among(
 
@@ -143,9 +159,9 @@ backwardmode (
                 try ( ['at'] R2 delete ['ic'] R2 delete )
             )
         )
-    )
+    )*/
 
-    define verb_suffix as setlimit tomark pV for (
+    /*define verb_suffix as setlimit tomark pV for (
         [substring] among(
             'ammo' 'ando' 'ano' 'are' 'arono' 'asse' 'assero' 'assi'
             'assimo' 'ata' 'ate' 'ati' 'ato' 'ava' 'avamo' 'avano' 'avate'
@@ -183,6 +199,7 @@ define stem as (
     do mark_regions
     backwards (
         do attached_pronoun
+        //do moma_suffix
         //do (standard_suffix or verb_suffix)
         do vowel_suffix
     )
